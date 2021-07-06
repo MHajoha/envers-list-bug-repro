@@ -2,6 +2,7 @@ package org.example;
 
 import java.time.Instant;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 import lombok.Data;
@@ -10,5 +11,6 @@ import lombok.Data;
 @Data
 public class MyEmbeddable {
 
+	@Column(nullable = false)
 	private Instant myInstant;
 }
